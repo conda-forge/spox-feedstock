@@ -146,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@cbourjau](https://github.com/cbourjau/)
+* [@janjagusch](https://github.com/janjagusch/)
 
