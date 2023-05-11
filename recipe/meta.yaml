@@ -1,5 +1,5 @@
 {% set name = "spox" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spox-{{ version }}.tar.gz
-  sha256: c436b510a6c0421da0961c01cc6bbb37e1d3b15a61a2a55154c33b647df1f7ee
+  sha256: 3ce6c14c148f46fbd480c2e7ec85d73731dc207677259ca47d9303d4e7351bae
 
 build:
   noarch: python
