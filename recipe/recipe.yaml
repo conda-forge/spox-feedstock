@@ -3,17 +3,17 @@ context:
   version: "0.12.1"
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spox-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/${{ name[0] }}/${{ name }}/spox-${{ version }}.tar.gz
   sha256: 11ac288e8f36b192927a7713337b840289f844345f41a247e4ae6579d89050bb
 
 build:
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  noarch: "python"
+  script: pip install . -v
+  number: 1
 
 requirements:
   host:
@@ -28,15 +28,15 @@ requirements:
     - onnx >=1.13
     - packaging
 
-test:
-  imports:
-    - spox
-  commands:
-    - pip check
-  requires:
-    - pip
-
-
+tests:
+  - python:
+      imports:
+        - spox
+  - script:
+      - pip check
+    requirements:
+      run:
+        - pip
 
 about:
   homepage: https://github.com/quantco/spox
@@ -49,4 +49,3 @@ extra:
   recipe-maintainers:
     - cbourjau
     - janjagusch
-
