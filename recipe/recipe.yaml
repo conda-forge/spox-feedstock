@@ -1,5 +1,6 @@
-{% set name = "spox" %}
-{% set version = "0.12.1" %}
+context:
+  name: "spox"
+  version: "0.12.1"
 
 package:
   name: {{ name|lower }}
@@ -35,14 +36,17 @@ test:
   requires:
     - pip
 
+
+
 about:
-  home: https://github.com/quantco/spox
-  summary: A framework for constructing ONNX computational graphs.
-  dev_url: https://github.com/quantco/spox
+  homepage: https://github.com/quantco/spox
   license: BSD-3-Clause
   license_file: LICENSE
+  summary: Jupyter Interactive Widgets
+  documentation: https://ipywidgets.readthedocs.io/en/latest/
 
 extra:
   recipe-maintainers:
     - cbourjau
     - janjagusch
+
