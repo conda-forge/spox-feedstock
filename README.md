@@ -3,11 +3,13 @@ About spox-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spox-feedstock/blob/main/LICENSE.txt)
 
-
+Home: https://github.com/quantco/spox
 
 Package license: BSD-3-Clause
 
 Summary: Jupyter Interactive Widgets
+
+Documentation: https://ipywidgets.readthedocs.io/en/latest/
 
 Current build status
 ====================
@@ -143,4 +145,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@cbourjau](https://github.com/cbourjau/)
+* [@janjagusch](https://github.com/janjagusch/)
 
