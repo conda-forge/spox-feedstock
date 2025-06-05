@@ -7,7 +7,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.io/packages/source/${{ name[0] }}/${{ name }}/spox-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/spox-${{ version }}.tar.gz
   sha256: b2a12dd9449bd6d8ddd9b5b0c1359589c86165dc76bce11d3ef0082972f93b65
 
 build:
@@ -17,19 +17,20 @@ build:
 
 requirements:
   host:
-    - python >=3.8.0
+    - python ${{ python_min }}.*
     - setuptools
     - setuptools-scm
     - wheel
     - pip
   run:
-    - python >=3.8.0
+    - python >=${{ python_min }}
     - numpy
     - onnx >=1.13
     - packaging
 
 tests:
   - python:
+      python_version: ${{ python_min }}.*
       imports:
         - spox
 
@@ -37,8 +38,8 @@ about:
   homepage: https://github.com/quantco/spox
   license: BSD-3-Clause
   license_file: LICENSE
-  summary: Jupyter Interactive Widgets
-  documentation: https://ipywidgets.readthedocs.io/en/latest/
+  summary: Pythonic framework for building ONNX graphs 
+  documentation: https://spox.readthedocs.io/en/latest/?badge=latest
 
 extra:
   recipe-maintainers:
