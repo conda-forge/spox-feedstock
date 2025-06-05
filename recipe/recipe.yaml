@@ -39,7 +39,7 @@ about:
   license: BSD-3-Clause
   license_file: LICENSE
   summary: Pythonic framework for building ONNX graphs 
-  documentation: https://spox.readthedocs.io/en/latest/?badge=latest
+  documentation: https://spox.readthedocs.io/en/latest/
 
 extra:
   recipe-maintainers:
