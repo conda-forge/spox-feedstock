@@ -7,9 +7,9 @@ Home: https://github.com/quantco/spox
 
 Package license: BSD-3-Clause
 
-Summary: Jupyter Interactive Widgets
+Summary: Pythonic framework for building ONNX graphs
 
-Documentation: https://ipywidgets.readthedocs.io/en/latest/
+Documentation: https://spox.readthedocs.io/en/latest/
 
 Current build status
 ====================

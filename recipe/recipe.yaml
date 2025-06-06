@@ -1,6 +1,6 @@
 context:
   name: "spox"
-  version: "0.14.1"
+  version: "0.15.0"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/spox-${{ version }}.tar.gz
-  sha256: b2a12dd9449bd6d8ddd9b5b0c1359589c86165dc76bce11d3ef0082972f93b65
+  sha256: 13f367607735c4327c7f623555c790786901a0bc11c44f8074124ec8b5e937ac
 
 build:
   noarch: "python"
